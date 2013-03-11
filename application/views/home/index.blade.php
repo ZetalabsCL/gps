@@ -1,57 +1,78 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Laravel: A Framework For Web Artisans</title>
+	<title>Sistema de Gestion GPs</title>
 	<meta name="viewport" content="width=device-width">
-	{{ HTML::style('laravel/css/style.css') }}
-</head>
-<body>
-	<div class="wrapper">
-		<header>
-			<h1>Laravel</h1>
-			<h2>A Framework For Web Artisans</h2>
+	<meta name="description" content="Sistema de control de flota GPS para pequeñas y medianas empresas">
+    <meta name="author" content="Reinaldo Zurita (reinaldo@zetalabs.cl)">
+	{{ HTML::style('css/bootstrap.css') }}
+	{{ HTML::style('css/typica-login.css') }}
 
-			<p class="intro-text" style="margin-top: 45px;">
-			</p>
-		</header>
-		<div role="main" class="main">
-			<div class="home">
-				<h2>Learn the terrain.</h2>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-				<p>
-					You've landed yourself on our default home page. The route that
-					is generating this page lives at:
-				</p>
+    <!-- Le favicon -->
+    <link rel="shortcut icon" href="favicon.html">
 
-				<pre>{{ path('app') }}routes.php</pre>
+  </head>
 
-				<p>And the view sitting before you can be found at:</p>
+  <body>
 
-				<pre>{{ path('app') }}views/home/index.blade.php</pre>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index-2.html"><img src="logo.png" alt="Zetalabs, siempre innovando "></a>
+        </div>
+      </div>
+    </div>
 
-				<h2>Grow in knowledge.</h2>
+    <div class="container">
 
-				<p>
-					Learning to use Laravel is amazingly simple thanks to
-					its {{ HTML::link('docs', 'wonderful documentation') }}.
-				</p>
+        <div id="login-wraper">
+            <form class="form login-form">
+                <legend>Protege tu <span class="blue">Automovil</span></legend>
+            
+                <div class="body">
+                    <label>Usuario</label>
+                    <input type="text">
+                    
+                    <label>Clave</label>
+                    <input type="password">
+                </div>
+            
+                <div class="footer">
+                    <label class="checkbox inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1"> Recuerdame
+                    </label>
+                                
+                    <button type="submit" class="btn btn-success">Ingresar</button>
+                </div>
+            
+            </form>
+        </div>
 
-				<h2>Create something beautiful.</h2>
+    </div>
 
-				<p>
-					Now that you're up and running, it's time to start creating!
-					Here are some links to help you get started:
-				</p>
+    <footer class="white navbar-fixed-bottom">
+      Aun no tienes una cuenta? <a href="register.html" class="btn btn-black">Registrate</a>
+    </footer>
 
-				<ul class="out-links">
-					<li><a href="http://laravel.com">Official Website</a></li>
-					<li><a href="http://forums.laravel.com">Laravel Forums</a></li>
-					<li><a href="http://github.com/laravel/laravel">GitHub Repository</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    {{ HTML::script('js/jquery.js') }}
+	{{ HTML::script('js/bootstrap.js') }}
+	{{ HTML::script('js/backstretch.min.js') }}
+	{{ HTML::script('js/typica-login.js') }}
 </body>
 </html>
